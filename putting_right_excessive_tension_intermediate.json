@@ -1,0 +1,78 @@
+{
+  "movement": "putting",
+  "handedness": "right",
+  "scenario": "excessive_tension",
+  "skillLevel": "intermediate",
+  "version": "1.1-absolute",
+  "generatedAt": "2025-08-18T22:27:10.754122Z",
+  "description": "Over-gripping / too much band tension overall.",
+  "metadata": {
+    "notes": "Absolute pressure model: L/C/R are independent 0\u2013100, not normalized. Balance = closeness of three values.",
+    "expected_outcomes": {
+      "posture": "At address and early movement, values should be close; spine up indicates rounding; scaps up vs spine indicates over-retraction.",
+      "bands": "Lead/trail follow phase expectations; width at top (trail > lead) for swings; consistency for exercises/desk."
+    }
+  },
+  "phases": [
+    {
+      "phase": "address",
+      "pressure_sensors": {
+        "left_scap": 46.3,
+        "spine": 52.1,
+        "right_scap": 51.1
+      },
+      "stretch_sensors": {
+        "lead_arm": 22.4,
+        "trail_arm": 26.3
+      }
+    },
+    {
+      "phase": "takeaway",
+      "pressure_sensors": {
+        "left_scap": 50.7,
+        "spine": 46.1,
+        "right_scap": 45.1
+      },
+      "stretch_sensors": {
+        "lead_arm": 34.8,
+        "trail_arm": 32.3
+      }
+    },
+    {
+      "phase": "backstroke",
+      "pressure_sensors": {
+        "left_scap": 44.5,
+        "spine": 50.7,
+        "right_scap": 44.8
+      },
+      "stretch_sensors": {
+        "lead_arm": 46.8,
+        "trail_arm": 47.9
+      }
+    },
+    {
+      "phase": "forward_stroke",
+      "pressure_sensors": {
+        "left_scap": 48.0,
+        "spine": 47.5,
+        "right_scap": 48.0
+      },
+      "stretch_sensors": {
+        "lead_arm": 35.4,
+        "trail_arm": 30.2
+      }
+    },
+    {
+      "phase": "finish",
+      "pressure_sensors": {
+        "left_scap": 47.7,
+        "spine": 48.6,
+        "right_scap": 47.1
+      },
+      "stretch_sensors": {
+        "lead_arm": 22.0,
+        "trail_arm": 30.5
+      }
+    }
+  ]
+}

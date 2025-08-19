@@ -1,0 +1,78 @@
+{
+  "movement": "full_swing",
+  "handedness": "left",
+  "scenario": "perfect_execution",
+  "skillLevel": "professional",
+  "version": "1.1-absolute",
+  "generatedAt": "2025-08-18T22:27:10.776058Z",
+  "description": "Ideal biomechanics with stable posture and appropriate band loading by phase.",
+  "metadata": {
+    "notes": "Absolute pressure model: L/C/R are independent 0\u2013100, not normalized. Balance = closeness of three values.",
+    "expected_outcomes": {
+      "posture": "At address and early movement, values should be close; spine up indicates rounding; scaps up vs spine indicates over-retraction.",
+      "bands": "Lead/trail follow phase expectations; width at top (trail > lead) for swings; consistency for exercises/desk."
+    }
+  },
+  "phases": [
+    {
+      "phase": "address",
+      "pressure_sensors": {
+        "left_scap": 51.8,
+        "spine": 51.3,
+        "right_scap": 48.4
+      },
+      "stretch_sensors": {
+        "lead_arm": 11.5,
+        "trail_arm": 13.9
+      }
+    },
+    {
+      "phase": "backswing",
+      "pressure_sensors": {
+        "left_scap": 43.3,
+        "spine": 50.3,
+        "right_scap": 55.1
+      },
+      "stretch_sensors": {
+        "lead_arm": 18.6,
+        "trail_arm": 46.6
+      }
+    },
+    {
+      "phase": "transition",
+      "pressure_sensors": {
+        "left_scap": 44.2,
+        "spine": 48.9,
+        "right_scap": 55.0
+      },
+      "stretch_sensors": {
+        "lead_arm": 35.3,
+        "trail_arm": 56.4
+      }
+    },
+    {
+      "phase": "downswing",
+      "pressure_sensors": {
+        "left_scap": 54.8,
+        "spine": 50.7,
+        "right_scap": 46.9
+      },
+      "stretch_sensors": {
+        "lead_arm": 60.0,
+        "trail_arm": 38.3
+      }
+    },
+    {
+      "phase": "finish",
+      "pressure_sensors": {
+        "left_scap": 54.6,
+        "spine": 48.4,
+        "right_scap": 44.3
+      },
+      "stretch_sensors": {
+        "lead_arm": 28.6,
+        "trail_arm": 25.7
+      }
+    }
+  ]
+}

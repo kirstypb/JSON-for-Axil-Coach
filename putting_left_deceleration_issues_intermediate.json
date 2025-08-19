@@ -1,0 +1,78 @@
+{
+  "movement": "putting",
+  "handedness": "left",
+  "scenario": "deceleration_issues",
+  "skillLevel": "intermediate",
+  "version": "1.1-absolute",
+  "generatedAt": "2025-08-18T22:27:10.684508Z",
+  "description": "Slowing through impact/finish; under-load late.",
+  "metadata": {
+    "notes": "Absolute pressure model: L/C/R are independent 0\u2013100, not normalized. Balance = closeness of three values.",
+    "expected_outcomes": {
+      "posture": "At address and early movement, values should be close; spine up indicates rounding; scaps up vs spine indicates over-retraction.",
+      "bands": "Lead/trail follow phase expectations; width at top (trail > lead) for swings; consistency for exercises/desk."
+    }
+  },
+  "phases": [
+    {
+      "phase": "address",
+      "pressure_sensors": {
+        "left_scap": 50.2,
+        "spine": 51.3,
+        "right_scap": 50.4
+      },
+      "stretch_sensors": {
+        "lead_arm": 21.9,
+        "trail_arm": 23.4
+      }
+    },
+    {
+      "phase": "takeaway",
+      "pressure_sensors": {
+        "left_scap": 52.1,
+        "spine": 50.8,
+        "right_scap": 46.2
+      },
+      "stretch_sensors": {
+        "lead_arm": 30.1,
+        "trail_arm": 35.5
+      }
+    },
+    {
+      "phase": "backstroke",
+      "pressure_sensors": {
+        "left_scap": 48.8,
+        "spine": 48.6,
+        "right_scap": 49.2
+      },
+      "stretch_sensors": {
+        "lead_arm": 44.0,
+        "trail_arm": 47.6
+      }
+    },
+    {
+      "phase": "forward_stroke",
+      "pressure_sensors": {
+        "left_scap": 49.8,
+        "spine": 49.0,
+        "right_scap": 52.5
+      },
+      "stretch_sensors": {
+        "lead_arm": 31.9,
+        "trail_arm": 28.8
+      }
+    },
+    {
+      "phase": "finish",
+      "pressure_sensors": {
+        "left_scap": 48.3,
+        "spine": 50.3,
+        "right_scap": 50.5
+      },
+      "stretch_sensors": {
+        "lead_arm": 20.9,
+        "trail_arm": 24.4
+      }
+    }
+  ]
+}
