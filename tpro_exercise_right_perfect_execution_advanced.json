@@ -1,0 +1,78 @@
+{
+  "movement": "tpro_exercise",
+  "handedness": "right",
+  "scenario": "perfect_execution",
+  "skillLevel": "advanced",
+  "version": "1.1-absolute",
+  "generatedAt": "2025-08-18T22:27:10.970774Z",
+  "description": "Ideal biomechanics with stable posture and appropriate band loading by phase.",
+  "metadata": {
+    "notes": "Absolute pressure model: L/C/R are independent 0\u2013100, not normalized. Balance = closeness of three values.",
+    "expected_outcomes": {
+      "posture": "At address and early movement, values should be close; spine up indicates rounding; scaps up vs spine indicates over-retraction.",
+      "bands": "Lead/trail follow phase expectations; width at top (trail > lead) for swings; consistency for exercises/desk."
+    }
+  },
+  "phases": [
+    {
+      "phase": "setup",
+      "pressure_sensors": {
+        "left_scap": 52.5,
+        "spine": 52.2,
+        "right_scap": 47.7
+      },
+      "stretch_sensors": {
+        "lead_arm": 20.3,
+        "trail_arm": 19.2
+      }
+    },
+    {
+      "phase": "lunge_down",
+      "pressure_sensors": {
+        "left_scap": 47.6,
+        "spine": 49.0,
+        "right_scap": 48.7
+      },
+      "stretch_sensors": {
+        "lead_arm": 33.5,
+        "trail_arm": 35.7
+      }
+    },
+    {
+      "phase": "rotate_left",
+      "pressure_sensors": {
+        "left_scap": 47.4,
+        "spine": 52.0,
+        "right_scap": 49.9
+      },
+      "stretch_sensors": {
+        "lead_arm": 61.0,
+        "trail_arm": 30.9
+      }
+    },
+    {
+      "phase": "rotate_right",
+      "pressure_sensors": {
+        "left_scap": 50.9,
+        "spine": 52.2,
+        "right_scap": 50.5
+      },
+      "stretch_sensors": {
+        "lead_arm": 28.9,
+        "trail_arm": 59.1
+      }
+    },
+    {
+      "phase": "return_center",
+      "pressure_sensors": {
+        "left_scap": 47.3,
+        "spine": 51.5,
+        "right_scap": 50.9
+      },
+      "stretch_sensors": {
+        "lead_arm": 17.7,
+        "trail_arm": 18.1
+      }
+    }
+  ]
+}
