@@ -1,0 +1,78 @@
+{
+  "movement": "wedge_shot",
+  "handedness": "left",
+  "scenario": "posture_drift",
+  "skillLevel": "intermediate",
+  "version": "1.1-absolute",
+  "generatedAt": "2025-08-18T22:27:10.965387Z",
+  "description": "Losing posture progressively (spine up, scaps down).",
+  "metadata": {
+    "notes": "Absolute pressure model: L/C/R are independent 0\u2013100, not normalized. Balance = closeness of three values.",
+    "expected_outcomes": {
+      "posture": "At address and early movement, values should be close; spine up indicates rounding; scaps up vs spine indicates over-retraction.",
+      "bands": "Lead/trail follow phase expectations; width at top (trail > lead) for swings; consistency for exercises/desk."
+    }
+  },
+  "phases": [
+    {
+      "phase": "address",
+      "pressure_sensors": {
+        "left_scap": 51.7,
+        "spine": 49.2,
+        "right_scap": 53.2
+      },
+      "stretch_sensors": {
+        "lead_arm": 15.0,
+        "trail_arm": 9.3
+      }
+    },
+    {
+      "phase": "backswing",
+      "pressure_sensors": {
+        "left_scap": 43.8,
+        "spine": 53.9,
+        "right_scap": 51.6
+      },
+      "stretch_sensors": {
+        "lead_arm": 25.4,
+        "trail_arm": 41.4
+      }
+    },
+    {
+      "phase": "transition",
+      "pressure_sensors": {
+        "left_scap": 43.2,
+        "spine": 52.5,
+        "right_scap": 46.0
+      },
+      "stretch_sensors": {
+        "lead_arm": 34.1,
+        "trail_arm": 52.8
+      }
+    },
+    {
+      "phase": "downswing",
+      "pressure_sensors": {
+        "left_scap": 48.6,
+        "spine": 62.0,
+        "right_scap": 42.7
+      },
+      "stretch_sensors": {
+        "lead_arm": 58.1,
+        "trail_arm": 42.6
+      }
+    },
+    {
+      "phase": "finish",
+      "pressure_sensors": {
+        "left_scap": 50.6,
+        "spine": 63.6,
+        "right_scap": 36.4
+      },
+      "stretch_sensors": {
+        "lead_arm": 27.1,
+        "trail_arm": 22.5
+      }
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "movement": "full_swing",
+  "handedness": "left",
+  "scenario": "early_acceleration",
+  "skillLevel": "intermediate",
+  "version": "1.1-absolute",
+  "generatedAt": "2025-08-18T22:27:10.778993Z",
+  "description": "Tempo too fast early; aggressive build then plateau.",
+  "metadata": {
+    "notes": "Absolute pressure model: L/C/R are independent 0\u2013100, not normalized. Balance = closeness of three values.",
+    "expected_outcomes": {
+      "posture": "At address and early movement, values should be close; spine up indicates rounding; scaps up vs spine indicates over-retraction.",
+      "bands": "Lead/trail follow phase expectations; width at top (trail > lead) for swings; consistency for exercises/desk."
+    }
+  },
+  "phases": [
+    {
+      "phase": "address",
+      "pressure_sensors": {
+        "left_scap": 53.6,
+        "spine": 50.4,
+        "right_scap": 48.9
+      },
+      "stretch_sensors": {
+        "lead_arm": 15.0,
+        "trail_arm": 12.9
+      }
+    },
+    {
+      "phase": "backswing",
+      "pressure_sensors": {
+        "left_scap": 43.2,
+        "spine": 46.3,
+        "right_scap": 55.3
+      },
+      "stretch_sensors": {
+        "lead_arm": 22.5,
+        "trail_arm": 46.9
+      }
+    },
+    {
+      "phase": "transition",
+      "pressure_sensors": {
+        "left_scap": 47.5,
+        "spine": 50.6,
+        "right_scap": 52.0
+      },
+      "stretch_sensors": {
+        "lead_arm": 40.1,
+        "trail_arm": 60.7
+      }
+    },
+    {
+      "phase": "downswing",
+      "pressure_sensors": {
+        "left_scap": 56.6,
+        "spine": 46.5,
+        "right_scap": 46.3
+      },
+      "stretch_sensors": {
+        "lead_arm": 59.5,
+        "trail_arm": 36.7
+      }
+    },
+    {
+      "phase": "finish",
+      "pressure_sensors": {
+        "left_scap": 53.5,
+        "spine": 49.1,
+        "right_scap": 41.5
+      },
+      "stretch_sensors": {
+        "lead_arm": 26.2,
+        "trail_arm": 21.2
+      }
+    }
+  ]
+}

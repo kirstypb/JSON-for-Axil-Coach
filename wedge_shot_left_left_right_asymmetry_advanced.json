@@ -1,0 +1,78 @@
+{
+  "movement": "wedge_shot",
+  "handedness": "left",
+  "scenario": "left_right_asymmetry",
+  "skillLevel": "advanced",
+  "version": "1.1-absolute",
+  "generatedAt": "2025-08-18T22:27:10.857147Z",
+  "description": "Imbalanced left/right pressure or lead/trail stretch.",
+  "metadata": {
+    "notes": "Absolute pressure model: L/C/R are independent 0\u2013100, not normalized. Balance = closeness of three values.",
+    "expected_outcomes": {
+      "posture": "At address and early movement, values should be close; spine up indicates rounding; scaps up vs spine indicates over-retraction.",
+      "bands": "Lead/trail follow phase expectations; width at top (trail > lead) for swings; consistency for exercises/desk."
+    }
+  },
+  "phases": [
+    {
+      "phase": "address",
+      "pressure_sensors": {
+        "left_scap": 51.8,
+        "spine": 51.2,
+        "right_scap": 51.5
+      },
+      "stretch_sensors": {
+        "lead_arm": 12.8,
+        "trail_arm": 13.8
+      }
+    },
+    {
+      "phase": "backswing",
+      "pressure_sensors": {
+        "left_scap": 55.3,
+        "spine": 52.1,
+        "right_scap": 47.6
+      },
+      "stretch_sensors": {
+        "lead_arm": 25.4,
+        "trail_arm": 34.2
+      }
+    },
+    {
+      "phase": "transition",
+      "pressure_sensors": {
+        "left_scap": 51.9,
+        "spine": 48.0,
+        "right_scap": 43.2
+      },
+      "stretch_sensors": {
+        "lead_arm": 35.6,
+        "trail_arm": 54.4
+      }
+    },
+    {
+      "phase": "downswing",
+      "pressure_sensors": {
+        "left_scap": 60.1,
+        "spine": 51.6,
+        "right_scap": 39.4
+      },
+      "stretch_sensors": {
+        "lead_arm": 57.7,
+        "trail_arm": 36.8
+      }
+    },
+    {
+      "phase": "finish",
+      "pressure_sensors": {
+        "left_scap": 58.9,
+        "spine": 51.6,
+        "right_scap": 38.7
+      },
+      "stretch_sensors": {
+        "lead_arm": 30.4,
+        "trail_arm": 21.7
+      }
+    }
+  ]
+}
