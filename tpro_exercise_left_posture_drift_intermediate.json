@@ -1,0 +1,78 @@
+{
+  "movement": "tpro_exercise",
+  "handedness": "left",
+  "scenario": "posture_drift",
+  "skillLevel": "intermediate",
+  "version": "1.1-absolute",
+  "generatedAt": "2025-08-18T22:27:11.037266Z",
+  "description": "Losing posture progressively (spine up, scaps down).",
+  "metadata": {
+    "notes": "Absolute pressure model: L/C/R are independent 0\u2013100, not normalized. Balance = closeness of three values.",
+    "expected_outcomes": {
+      "posture": "At address and early movement, values should be close; spine up indicates rounding; scaps up vs spine indicates over-retraction.",
+      "bands": "Lead/trail follow phase expectations; width at top (trail > lead) for swings; consistency for exercises/desk."
+    }
+  },
+  "phases": [
+    {
+      "phase": "setup",
+      "pressure_sensors": {
+        "left_scap": 50.2,
+        "spine": 50.3,
+        "right_scap": 50.3
+      },
+      "stretch_sensors": {
+        "lead_arm": 23.4,
+        "trail_arm": 18.8
+      }
+    },
+    {
+      "phase": "lunge_down",
+      "pressure_sensors": {
+        "left_scap": 49.8,
+        "spine": 52.7,
+        "right_scap": 47.6
+      },
+      "stretch_sensors": {
+        "lead_arm": 36.5,
+        "trail_arm": 34.7
+      }
+    },
+    {
+      "phase": "rotate_left",
+      "pressure_sensors": {
+        "left_scap": 49.1,
+        "spine": 56.4,
+        "right_scap": 50.4
+      },
+      "stretch_sensors": {
+        "lead_arm": 58.2,
+        "trail_arm": 27.1
+      }
+    },
+    {
+      "phase": "rotate_right",
+      "pressure_sensors": {
+        "left_scap": 43.7,
+        "spine": 58.2,
+        "right_scap": 44.8
+      },
+      "stretch_sensors": {
+        "lead_arm": 27.9,
+        "trail_arm": 56.7
+      }
+    },
+    {
+      "phase": "return_center",
+      "pressure_sensors": {
+        "left_scap": 47.1,
+        "spine": 63.5,
+        "right_scap": 45.1
+      },
+      "stretch_sensors": {
+        "lead_arm": 18.0,
+        "trail_arm": 23.2
+      }
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "movement": "tpro_exercise",
+  "handedness": "left",
+  "scenario": "fatigue_pattern",
+  "skillLevel": "intermediate",
+  "version": "1.1-absolute",
+  "generatedAt": "2025-08-18T22:27:11.041029Z",
+  "description": "Progressive degradation through phases.",
+  "metadata": {
+    "notes": "Absolute pressure model: L/C/R are independent 0\u2013100, not normalized. Balance = closeness of three values.",
+    "expected_outcomes": {
+      "posture": "At address and early movement, values should be close; spine up indicates rounding; scaps up vs spine indicates over-retraction.",
+      "bands": "Lead/trail follow phase expectations; width at top (trail > lead) for swings; consistency for exercises/desk."
+    }
+  },
+  "phases": [
+    {
+      "phase": "setup",
+      "pressure_sensors": {
+        "left_scap": 48.5,
+        "spine": 50.5,
+        "right_scap": 50.4
+      },
+      "stretch_sensors": {
+        "lead_arm": 18.9,
+        "trail_arm": 22.5
+      }
+    },
+    {
+      "phase": "lunge_down",
+      "pressure_sensors": {
+        "left_scap": 46.0,
+        "spine": 47.1,
+        "right_scap": 46.4
+      },
+      "stretch_sensors": {
+        "lead_arm": 36.3,
+        "trail_arm": 30.0
+      }
+    },
+    {
+      "phase": "rotate_left",
+      "pressure_sensors": {
+        "left_scap": 50.2,
+        "spine": 48.4,
+        "right_scap": 52.9
+      },
+      "stretch_sensors": {
+        "lead_arm": 58.8,
+        "trail_arm": 25.1
+      }
+    },
+    {
+      "phase": "rotate_right",
+      "pressure_sensors": {
+        "left_scap": 50.3,
+        "spine": 53.4,
+        "right_scap": 51.4
+      },
+      "stretch_sensors": {
+        "lead_arm": 30.1,
+        "trail_arm": 55.3
+      }
+    },
+    {
+      "phase": "return_center",
+      "pressure_sensors": {
+        "left_scap": 50.7,
+        "spine": 49.9,
+        "right_scap": 46.2
+      },
+      "stretch_sensors": {
+        "lead_arm": 15.9,
+        "trail_arm": 18.6
+      }
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "movement": "desk_session",
+  "handedness": "right",
+  "scenario": "left_right_asymmetry",
+  "skillLevel": "intermediate",
+  "version": "1.1-absolute",
+  "generatedAt": "2025-08-18T22:27:11.053796Z",
+  "description": "Imbalanced left/right pressure or lead/trail stretch.",
+  "metadata": {
+    "notes": "Absolute pressure model: L/C/R are independent 0\u2013100, not normalized. Balance = closeness of three values.",
+    "expected_outcomes": {
+      "posture": "At address and early movement, values should be close; spine up indicates rounding; scaps up vs spine indicates over-retraction.",
+      "bands": "Lead/trail follow phase expectations; width at top (trail > lead) for swings; consistency for exercises/desk."
+    }
+  },
+  "phases": [
+    {
+      "phase": "initial_posture",
+      "pressure_sensors": {
+        "left_scap": 47.7,
+        "spine": 51.3,
+        "right_scap": 48.9
+      },
+      "stretch_sensors": {
+        "lead_arm": 7.2,
+        "trail_arm": 1.2
+      }
+    },
+    {
+      "phase": "slouch_detection",
+      "pressure_sensors": {
+        "left_scap": 49.3,
+        "spine": 67.5,
+        "right_scap": 35.3
+      },
+      "stretch_sensors": {
+        "lead_arm": 5.7,
+        "trail_arm": 7.1
+      }
+    },
+    {
+      "phase": "correction",
+      "pressure_sensors": {
+        "left_scap": 57.3,
+        "spine": 47.9,
+        "right_scap": 45.4
+      },
+      "stretch_sensors": {
+        "lead_arm": 6.1,
+        "trail_arm": 4.7
+      }
+    },
+    {
+      "phase": "hold_position",
+      "pressure_sensors": {
+        "left_scap": 54.1,
+        "spine": 48.6,
+        "right_scap": 40.2
+      },
+      "stretch_sensors": {
+        "lead_arm": 12.1,
+        "trail_arm": 10.2
+      }
+    },
+    {
+      "phase": "final_assessment",
+      "pressure_sensors": {
+        "left_scap": 53.4,
+        "spine": 51.8,
+        "right_scap": 40.4
+      },
+      "stretch_sensors": {
+        "lead_arm": 5.0,
+        "trail_arm": 1.6
+      }
+    }
+  ]
+}

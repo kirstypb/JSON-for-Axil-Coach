@@ -1,0 +1,78 @@
+{
+  "movement": "desk_session",
+  "handedness": "right",
+  "scenario": "perfect_execution",
+  "skillLevel": "beginner",
+  "version": "1.1-absolute",
+  "generatedAt": "2025-08-18T22:27:11.042332Z",
+  "description": "Ideal biomechanics with stable posture and appropriate band loading by phase.",
+  "metadata": {
+    "notes": "Absolute pressure model: L/C/R are independent 0\u2013100, not normalized. Balance = closeness of three values.",
+    "expected_outcomes": {
+      "posture": "At address and early movement, values should be close; spine up indicates rounding; scaps up vs spine indicates over-retraction.",
+      "bands": "Lead/trail follow phase expectations; width at top (trail > lead) for swings; consistency for exercises/desk."
+    }
+  },
+  "phases": [
+    {
+      "phase": "initial_posture",
+      "pressure_sensors": {
+        "left_scap": 50.7,
+        "spine": 46.0,
+        "right_scap": 46.6
+      },
+      "stretch_sensors": {
+        "lead_arm": 7.3,
+        "trail_arm": 4.7
+      }
+    },
+    {
+      "phase": "slouch_detection",
+      "pressure_sensors": {
+        "left_scap": 49.5,
+        "spine": 65.1,
+        "right_scap": 39.1
+      },
+      "stretch_sensors": {
+        "lead_arm": 8.8,
+        "trail_arm": 0
+      }
+    },
+    {
+      "phase": "correction",
+      "pressure_sensors": {
+        "left_scap": 51.9,
+        "spine": 52.6,
+        "right_scap": 44.4
+      },
+      "stretch_sensors": {
+        "lead_arm": 7.3,
+        "trail_arm": 7.7
+      }
+    },
+    {
+      "phase": "hold_position",
+      "pressure_sensors": {
+        "left_scap": 47.0,
+        "spine": 49.2,
+        "right_scap": 48.0
+      },
+      "stretch_sensors": {
+        "lead_arm": 4.8,
+        "trail_arm": 10.2
+      }
+    },
+    {
+      "phase": "final_assessment",
+      "pressure_sensors": {
+        "left_scap": 51.7,
+        "spine": 52.4,
+        "right_scap": 54.6
+      },
+      "stretch_sensors": {
+        "lead_arm": 0.5,
+        "trail_arm": 5.5
+      }
+    }
+  ]
+}

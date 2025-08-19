@@ -1,0 +1,78 @@
+{
+  "movement": "desk_session",
+  "handedness": "right",
+  "scenario": "left_right_asymmetry",
+  "skillLevel": "professional",
+  "version": "1.1-absolute",
+  "generatedAt": "2025-08-18T22:27:11.054716Z",
+  "description": "Imbalanced left/right pressure or lead/trail stretch.",
+  "metadata": {
+    "notes": "Absolute pressure model: L/C/R are independent 0\u2013100, not normalized. Balance = closeness of three values.",
+    "expected_outcomes": {
+      "posture": "At address and early movement, values should be close; spine up indicates rounding; scaps up vs spine indicates over-retraction.",
+      "bands": "Lead/trail follow phase expectations; width at top (trail > lead) for swings; consistency for exercises/desk."
+    }
+  },
+  "phases": [
+    {
+      "phase": "initial_posture",
+      "pressure_sensors": {
+        "left_scap": 48.4,
+        "spine": 50.6,
+        "right_scap": 50.7
+      },
+      "stretch_sensors": {
+        "lead_arm": 3.7,
+        "trail_arm": 5.4
+      }
+    },
+    {
+      "phase": "slouch_detection",
+      "pressure_sensors": {
+        "left_scap": 49.4,
+        "spine": 63.6,
+        "right_scap": 40.5
+      },
+      "stretch_sensors": {
+        "lead_arm": 6.0,
+        "trail_arm": 2.9
+      }
+    },
+    {
+      "phase": "correction",
+      "pressure_sensors": {
+        "left_scap": 57.9,
+        "spine": 48.9,
+        "right_scap": 44.9
+      },
+      "stretch_sensors": {
+        "lead_arm": 8.0,
+        "trail_arm": 7.7
+      }
+    },
+    {
+      "phase": "hold_position",
+      "pressure_sensors": {
+        "left_scap": 57.9,
+        "spine": 49.6,
+        "right_scap": 42.0
+      },
+      "stretch_sensors": {
+        "lead_arm": 10.2,
+        "trail_arm": 6.3
+      }
+    },
+    {
+      "phase": "final_assessment",
+      "pressure_sensors": {
+        "left_scap": 54.9,
+        "spine": 48.4,
+        "right_scap": 43.8
+      },
+      "stretch_sensors": {
+        "lead_arm": 4.7,
+        "trail_arm": 3.5
+      }
+    }
+  ]
+}
